@@ -1,73 +1,81 @@
-html {
-    font-family: serif;
-    background: rgb(253, 254, 246);
-    margin: 0;
+html { 
+    font-family: serif; 
+    background: rgb(253, 254, 246); 
+    margin: 0; 
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 290px; 
 }
 
-.header {
-    margin-bottom: 20px;
+.header { 
+    margin-bottom: 10px; 
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.hero { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0px; 
 }
 
-.hero {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+.toggle-checkbox { 
+    display: none; /* Hide the checkbox */ 
 }
 
-.card-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.toggle-label { 
+    cursor: pointer; /* Change cursor to pointer */ 
+    padding: 10px 20px; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
 }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    width: 100%;
-    
+.card-section { 
+    display: flex; /* Hide the card section by default */ 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #e0e0e0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.card-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    width: 100%; 
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.card-image {
-    width: 100%;
-    height: 500px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;}
+.img {
+    width: 80px;
+    height: 80px
+}
+.card { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px; 
+    background-color: #e0e0e0; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+}
+
+.card-image { 
+    width: 100%; 
+    height: 450px; 
+    background-color: #ccc; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
