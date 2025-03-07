@@ -8,19 +8,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>The World Of Instant Noodles</title>
-    <Body
-        background= "assets/theone.png">;
-    </Body>
-    <div class="container"> 
-        <div class="header">
-            <h1>The World Of Instant Noodles</h1>
-        </div>
-        <div class="hero" style="color:#000000">
-            <button class="enter-button" onclick="location.href='index2.html'">Enter</button>
-        </div>
-        <div class="aboutme" style="color:#000000">
-            <button class="aboutme-button" onclick="location.href='index3.html'">About Me</button>
-        </div>
-    </div>
 </head>
+<Body>
+        <div class="container">
+            <div class="header">
+                <h1>The World Of Instant Noodles</h1>
+            </div>
+            <div class="hero" style="color:#000000">
+                <button class="enter-button">Enter</button>
+            </div>
+            <div class="aboutme" style="color:#000000">
+                <button class="aboutme-button">About Me</button>
+            </div>
+        </div>
+    <script>
+        function createNoodleAnimation(targetUrl) {
+            const noodle = document.createElement('div');
+            noodle.className = 'noodle';
+            document.body.appendChild(noodle);
+    
+            // Remove the noodle element after the animation ends
+            noodle.addEventListener('animationend', () => {
+                noodle.remove();
+                // Redirect to the new page after the animation
+                setTimeout(() => {
+                    window.location.href = targetUrl; // Use the passed URL
+                }, 0); // Delay to allow the animation to finish
+            });
+        }
+    
+        // Attach the function to buttons
+        document.querySelector('.enter-button').addEventListener('click', function() {
+            createNoodleAnimation('index2.html'); // Set the target URL
+        });
+    
+        document.querySelector('.aboutme-button').addEventListener('click', function() {
+            createNoodleAnimation('index3.html'); // Set the target URL
+        });
+    
+    </script>
+</Body>
 </html>

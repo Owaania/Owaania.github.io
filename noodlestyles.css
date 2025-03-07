@@ -1,0 +1,8 @@
+html, body { 
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+  
+}

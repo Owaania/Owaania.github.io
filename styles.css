@@ -7,6 +7,7 @@ html, body {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
+    overflow-x: hidden;
   
 }
 
@@ -114,7 +115,7 @@ html, body {
     align-items: center; 
     padding: 10px; 
     background-color: #e0e0e0; 
-    border: 1px solid #ddd; 
+    border: 0px solid #000000; 
     border-radius: 8px; 
 }
 
@@ -166,4 +167,293 @@ html, body {
     border-radius: 10px;
     background-color: #FFC300;
     color: #000000;
+}
+
+.originalbuldak-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #C70039; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.originalbuldak-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.originalbuldak { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.carbonarabuldak-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #f066a7; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.carbonarabuldak-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.carbonarabuldak { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.cheesebuldak-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #f7d052; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.cheesebuldak-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.cheesebuldak { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.jjajangbuldak-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #acf752; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.jjajangbuldak-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.jjajangbuldak { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.habanerolimebuldak-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #dc52f7; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.habanerolimebuldak-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.habanerolimebuldak { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.quattrobuldak-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #f7a552; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.quattrobuldak-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.quattrobuldak { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.originalindomie-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #C70039; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.originalindomie-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.originalindomie { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.hotnspicyindomie-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #f75287; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.hotnspicyindomie-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.hotnspicyindomie { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.barbequechickenindomie-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #52c0f7; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.barbequechickenindomie-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.barbequechickenindomie { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.originalshin-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #C70039; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.originalshin-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.originalshin { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.blackshin-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #000000; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.blackshin-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.blackshin { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+.lightshin-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #FFFFFF; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.lightshin-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.lightshin { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.2s;
+}
+
+@keyframes noodle-animation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-225vh);
+        opacity: 1;
+    }
+}
+
+.noodle {
+    position: fixed;
+    top: 150%;
+    left: 0%;
+    width: 1700px; /* Adjust width as needed */
+    height: 1700px; /* Adjust height as needed */
+    background: url('assets/NOODS.png') no-repeat center center; /* Replace with your noodle image */
+    background-size: cover;
+    animation: noodle-animation 1.8s forwards;
+    pointer-events: none; /* Prevent interaction with the noodle div */
+    transform: translateX(-500%);
+    z-index: 9999; /* Ensure it appears above other content */
 }
