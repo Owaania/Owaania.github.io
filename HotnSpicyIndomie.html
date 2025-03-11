@@ -7,19 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <body style="background-color:#97dcf1">
+    <body style="background-color:#fb3131">
 </head>
 <body>
 
-    <h1><i><b>Barbeque Chicken Indomie</b></i></h1>
-    <img src="assets/barbchickdomie1.png">
-    <p>Time to prepare: ~5 minutes</p>
-    <p>Rating average:⭐️⭐️⭐️</p>
+    <h1><i><b>Hot and Spicy Indomie</b></i></h1>
+    <img src= "assets/HotnSpicydomie1.png">
+    <div class="flexbox-grid">
+        <p>Time to prepare: ~3 minutes </p>
+        <p>Rating average:⭐️⭐️⭐️</p>
+    </div>
 
-      <div class="flexbox-grid">
-        <h2>DESCRIPTION</h2>
-        <p>Indomie Mi Goreng Hot & Spicy offers the perfect combination of spices, chili, and crispy fried onion that will awake all your senses and add sizzle to your palate! Indomie Mi Goreng Barbeque Chicken offers a unique barbeque chicken aroma, distinguishing it from other flavors. The Indomie Mi Goreng BBQ Chicken is often available in bulk packs, such as a pack of 30 for around 80 cents each.</p>
+    <div class="flexbox-grid" style="background-color:#fb6161">
+        <h2>Description</h2>
+    </div>
+    <div class="flexbox-grid">
+        <p>Hot and Spicy-flavored Indomie Instant Noodles is a fiery and bold variation of the iconic Indomie Mi Goreng series. Designed for spice lovers, this flavor takes the classic dry-style instant noodles and turns up the heat, delivering a thrilling and satisfying experience for those who crave a kick of spice in their meals.
+
+            The dish features Indomie’s signature thin, springy noodles, which are cooked and then tossed in a spicy seasoning blend. The result is a flavorful, spicy, and slightly sweet noodle dish with a satisfying crunch from the fried shallots. The heat is prominent but balanced by the sweetness of the soy sauce, making it an addictive and enjoyable meal for spice enthusiasts.
+
+            Hot and Spicy-flavored Indomie is versatile and can be enjoyed as is or customized with additional toppings like fried eggs, vegetables, or protein to make it a more substantial meal. It’s a quick and easy option for those who love bold, spicy flavors and want to add some excitement to their instant noodle experience.
+            
+            This flavor is perfect for anyone who enjoys a fiery kick in their food. </p>
+    </div>
+        <div class="flexbox-grid" style="background-color:#fb6161">
         <h2>Instructions</h2>
+        </div>
+    <div class="flexbox-grid">
         <h3>Boil the Noodles: </h3>
         <ul>
             <li>Bring a pot of water to a boil</li>
@@ -33,5 +47,33 @@
             <li>Mix the sauces and the noodles together (Optional) </li>
             <li>You are now ready to serve!</li>
         </ul>
-        </div>
+    </div>
+
+    <div class="return">
+        <button class="return-button" style="background-color:#fb6161">Return</button>
+    </div>
+
+    <script>
+        function createNoodleAnimation(targetUrl) {
+            const noodle = document.createElement('div');
+            noodle.className = 'noodle';
+                // Remove the noodle element after the animation ends
+                noodle.addEventListener('animationend', () => {
+                noodle.remove();
+                // Redirect to the new page after the animation
+                setTimeout(() => {
+                    window.location.href = targetUrl; // Use the passed URL
+                });
+            });
+            document.body.appendChild(noodle);
+
+        }
+
+        document.querySelectorAll('.return-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('index2.html'); // Set the target URL
+            });
+        });
+    </script>
 </body>
+

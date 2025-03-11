@@ -440,7 +440,7 @@ html, body {
     }
 
     100% {
-        transform: translateY(-100vh);
+        transform: translateY(-550vh);
         opacity: 1;
     }
 
@@ -449,11 +449,12 @@ html, body {
 .noodle {
     position: fixed;
     top: 150%;
-    width: 2300px; /* Adjust width as needed */
-    height: 1220px; /* Adjust height as needed */
-    background: url('assets/N.png') no-repeat center; /* Replace with your noodle image */
+    align-items: center;
+    width: 1800px; /* Adjust width as needed */
+    height: 4400px; /* Adjust height as needed */
+    background: url('assets/NOODS.png') no-repeat center center; /* Replace with your noodle image */
     background-size: cover;
-    animation: noodle-animation 2.5s forwards;
+    animation: noodle-animation 3s forwards;
     z-index: 9999; /* Ensure it appears above other content */;
     animation-delay: -0s;
 }

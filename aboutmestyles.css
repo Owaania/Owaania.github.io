@@ -6,6 +6,7 @@ html, body {
     overflow-x: hidden;
     align-items: right;
     font-family: "Jost", sans-serif;
+    background-color: #ffefa6;
 }
 
 .flexbox-grid { 
@@ -15,7 +16,6 @@ html, body {
     margin-right: 100px;
     margin-left: 100px;
     padding-left: 25px;
-    border-radius: 10px
 }
 
 h2 {
@@ -25,17 +25,16 @@ h2 {
 
 h1 {
     display: flex;
-    margin: auto;
+    margin: center;
     text-align: center;
-    padding: 20px;
-    padding-left: 500px
+    margin-left: 650px;
 }   
 
 img {
-    display: block;
-    margin: auto;
-    width: 550px;
-    height: 550px;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    float: right;
 }
 
 .return { 

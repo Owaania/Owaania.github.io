@@ -13,29 +13,60 @@
 
     <h1><i><b>Shin Ramyun Black</b></i></h1>
     <img src="assets/ShinBlack1.png">
-    <p>Time to prepare: ~5 minutes</p>
-    <p>Rating average:⭐️⭐️⭐️</p>
+    <div class="flexbox-grid">
+        <p>Time to prepare: ~5 minutes </p>
+        <p>Rating average:⭐️⭐️⭐️⭐️</p>
+    </div>
 
-      <div class="flexbox-grid">
-        <h2>DESCRIPTION</h2>
+    <div class="flexbox-grid" style="background-color:#be4a4a">
+        <h2>Description</h2>
+    </div>
+
+    <div class="flexbox-grid">
         <p>Shinyamyun Black is a premium variant of the popular Korean instant noodle brand, Shin Ramyun, known for its bold and spicy flavors. The "Black" version elevates the classic Shin Ramyun experience by incorporating a richer, more complex broth and additional gourmet ingredients.
 
             The broth is made with a blend of beef bone soup and hearty spices, creating a deep, savory, and slightly smoky flavor profile. It also includes larger, higher-quality dehydrated vegetable pieces, such as mushrooms and green onions, as well as tender beef bits, enhancing the overall texture and taste. The noodles are thick and chewy, designed to hold up well in the robust broth.
             
             Shinyamyun Black is often described as a more sophisticated and satisfying version of the original, appealing to those who enjoy a spicier, more indulgent instant noodle experience. It’s a favorite among fans of Korean cuisine and instant noodle enthusiasts looking for a premium option.</p>
+    </div>
+
+        <div class="flexbox-grid" style="background-color:#be4a4a">
         <h2>Instructions</h2>
-        <h3>Boil the Noodles: </h3>
+        </div>
+    
+    <div class="flexbox-grid">
         <ul>
-            <li>Bring a pot of water to a boil</li>
-            <li>1/4 cup boiling water</li>
-            <li>Add the Indomie Mi Goreng noodles</li>
-            <li>Cook for a maximum of 3 minutes on medium heat</li>
-        </ul>
-        <h3>Prepare the Sauce:</h3>
-        <ul>
-            <li>On a plate, combine the sesame oil, chili powder, seasoning powder, and soya sauce provided in each noodle pack.</li>
-            <li>Mix the sauces and the noodles together (Optional) </li>
-            <li>You are now ready to serve!</li>
+            <li>Pour 550 ml of water into a pot and bring it to a boil.</li>  
+            <li>Once the water is boiling, add the noodles from the Shin Ramyun pack. Let the noodles cook for about 4-5 minutes, stirring occasionally, until they become soft and chewy.</li>
+            <li>Open the seasoning packets (usually one powder packet and one vegetable/flake packet) and add them to the pot. Stir well to dissolve the seasoning and distribute the flavors evenly.</li>
+            <li>Transfer the noodles into a bowl, ready to be served.</li>
         </ul>
         </div>
+
+        <div class="return">
+            <button class="return-button" style="background-color:#be4a4a"> Return </button>
+        </div>
+    
+        <script>
+            function createNoodleAnimation(targetUrl) {
+                const noodle = document.createElement('div');
+                noodle.className = 'noodle';
+                    // Remove the noodle element after the animation ends
+                    noodle.addEventListener('animationend', () => {
+                    noodle.remove();
+                    // Redirect to the new page after the animation
+                    setTimeout(() => {
+                        window.location.href = targetUrl; // Use the passed URL
+                    });
+                });
+                document.body.appendChild(noodle);
+    
+            }
+    
+            document.querySelectorAll('.return-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    createNoodleAnimation('index2.html'); // Set the target URL
+                });
+            });
+        </script>
 </body>
