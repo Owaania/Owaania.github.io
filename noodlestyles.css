@@ -4,5 +4,85 @@ html, body {
     font-weight: 400;
     font-style: normal;
     overflow-x: hidden;
-  
+    align-items: right;
+    padding-left: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.flexbox-grid { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: left; 
+    margin-right: 100px;
+    padding-left: 10px
+}
+
+h2 {
+    display: flex;
+}
+
+h1 {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    padding-left: 500px
+}   
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.return { 
+    display: flex; 
+    margin: auto;
+    flex-direction: column; 
+    align-items: top; 
+    padding: 10px;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.return-button {
+    cursor: pointer;
+    padding: 10px 20px; 
+    margin: auto;
+    background-color: #936b25; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; /* Adjust font size as needed */
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.return-button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+@keyframes noodle-animation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-204vh);
+        opacity: 1;
+    }
+
+}
+
+.noodle {
+    position: fixed;
+    top: 150%;
+    width: 2200px; /* Adjust width as needed */
+    height: 1220px; /* Adjust height as needed */
+    background: url('assets/NOODS.png') no-repeat center center; /* Replace with your noodle image */
+    background-size: cover;
+    animation: noodle-animation 2.5s forwards;
+    z-index: 9999; /* Ensure it appears above other content */;
+    animation-delay: -0s;
 }

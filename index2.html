@@ -23,7 +23,7 @@
         </div>
         <div class="card-grid">
             <div class="card" style="background-color:#C70039">
-                <button class="originalbuldak-button" onclick="location.href='originalbuldak.html'">
+                <button class="originalbuldak-button">
                 <img src="assets/Origibuldak05.png"
                 width="400"
                 height="350"
@@ -33,7 +33,7 @@
                 </button>
             </div>
             <div class="card" style="background-color:#f066a7">
-                <button class="carbonarabuldak-button" onclick="location.href='CarbonaraBuldak.html'">
+                <button class="carbonarabuldak-button">
                 <img src="assets/CarboBuldak05.png"
                 width="400"
                 height="350"
@@ -43,7 +43,7 @@
                 </button>
             </div>
             <div class="card" style="background-color:#f7d052">
-                <button class="cheesebuldak-button" onclick="location.href='cheesebuldak.html'">
+                <button class="cheesebuldak-button">
                 <img src="assets/CheesBuldak05.png"
                 width="400"
                 height="350"
@@ -53,7 +53,7 @@
                 </button>
             </div>
             <div class="card" style="background-color:#acf752">
-                <button class="jjajangbuldak-button" onclick="location.href='Jjajangbuldak.html'">
+                <button class="jjajangbuldak-button">
                 <img src="assets/JjajangBuldak05.png"
                 width="400"
                 height="350"
@@ -63,7 +63,7 @@
                 </button>
             </div>
             <div class="card" style="background-color: #dc52f7">
-                <button class="habanerolimebuldak-button" onclick="location.href='LimeBuldak.html'">
+                <button class="habanerolimebuldak-button">
                 <img src="assets/HabaneroLime05.png"
                 width="400"
                 height="350"
@@ -73,7 +73,7 @@
                 </button>
             </div>
             <div class="card" style="background-color: #f7a552">
-                <button class="quattrobuldak-button" onclick="location.href='QuattroBuldak.html'">
+                <button class="quattrobuldak-button">
                 <img src="assets/QuattroBuldak05.png"
                 width="400"
                 height="350"
@@ -88,7 +88,7 @@
         </div>
         <div class="card-grid">
             <div class="card" style="background-color:#C70039">
-                <button class="originalindomie-button" onclick="location.href='OriginalIndomie.html'">
+                <button class="originalindomie-button">
                 <img src="assets/Origidomie.png"
                 width="400"
                 height="350"
@@ -98,7 +98,7 @@
                 </button>
             </div>
             <div class="card" style="background-color: #f75287">
-                <button class="hotnspicyindomie-button" onclick="location.href='HotnSpicyIndomie.html'">
+                <button class="hotnspicyindomie-button">
                 <img src="assets/HotnSpicedomie.png"
                 width="400"
                 height="350"
@@ -108,7 +108,7 @@
                 </button>
             </div>
             <div class="card" style="background-color: #52c0f7">
-                <button class="barbequechickenindomie-button" onclick="location.href='BarbequeChickenIndomie.html'">
+                <button class="barbequechickenindomie-button">
                 <img src="assets/BarbChickdomie.png"
                 width="400"
                 height="350"
@@ -123,7 +123,7 @@
             </div>
             <div class="card-grid">
                 <div class="card" style="background-color:#C70039">
-                    <button class="originalshin-button" onclick="location.href='OriginalShin.html'">
+                    <button class="originalshin-button">
                     <img src="assets/SHINORIG.png"
                     width="400"
                     height="350"
@@ -133,7 +133,7 @@
                     </button>
                 </div>
                 <div class="card" style="background-color: #000000">
-                    <button class="blackshin-button" onclick="location.href='blackShin.html'">
+                    <button class="blackshin-button">
                     <img src="assets/SHINBLACK.png"
                     width="400"
                     height="350"
@@ -143,7 +143,7 @@
                     </button>
                 </div>
                 <div class="card" style="background-color: #FFFFFF">
-                    <button class="lightshin-button" onclick="location.href='lightShin.html'">
+                    <button class="lightshin-button">
                     <img src="assets/SHINLIGHT.png"
                     width="400"
                     height="350"
@@ -160,21 +160,93 @@
         function createNoodleAnimation(targetUrl) {
             const noodle = document.createElement('div');
             noodle.className = 'noodle';
-            document.body.appendChild(noodle);
-
-            // Remove the noodle element after the animation ends
-            noodle.addEventListener('animationend', () => {
+                // Remove the noodle element after the animation ends
+                noodle.addEventListener('animationend', () => {
                 noodle.remove();
                 // Redirect to the new page after the animation
                 setTimeout(() => {
                     window.location.href = targetUrl; // Use the passed URL
-                }, 0); // Delay to allow the animation to finish
+                });
             });
+            document.body.appendChild(noodle);
+
         }
 
         document.querySelectorAll('.return-button').forEach(button => {
             button.addEventListener('click', function() {
                 createNoodleAnimation('index.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.originalbuldak-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('OriginalBuldak.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.carbonarabuldak-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('CarbonaraBuldak.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.cheesebuldak-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('CheeseBuldak.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.jjajangbuldak-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('JjajangBuldak.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.habanerolimebuldak-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('LimeBuldak.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.quattrobuldak-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('QuattroBuldak.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.originalindomie-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('OriginalIndomie.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.hotnspicyindomie-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('HotnSpicyIndomie.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.barbequechickenindomie-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('BarbequeChickenindomie.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.originalshin-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('OriginalShin.html'); // Set the target URL
+            });
+        });
+
+        document.querySelectorAll('.blackshin-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('BlackShin.html'); // Set the target URL
+            });
+        });
+        
+        document.querySelectorAll('.lightshin-button').forEach(button => {
+            button.addEventListener('click', function() {
+                createNoodleAnimation('LightShin.html'); // Set the target URL
             });
         });
     </script>

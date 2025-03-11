@@ -438,22 +438,22 @@ html, body {
         transform: translateY(0);
         opacity: 1;
     }
+
     100% {
-        transform: translateY(-225vh);
+        transform: translateY(-100vh);
         opacity: 1;
     }
+
 }
 
 .noodle {
     position: fixed;
     top: 150%;
-    left: 0%;
-    width: 1700px; /* Adjust width as needed */
-    height: 1700px; /* Adjust height as needed */
-    background: url('assets/NOODS.png') no-repeat center center; /* Replace with your noodle image */
+    width: 2300px; /* Adjust width as needed */
+    height: 1220px; /* Adjust height as needed */
+    background: url('assets/N.png') no-repeat center; /* Replace with your noodle image */
     background-size: cover;
-    animation: noodle-animation 1.8s forwards;
-    pointer-events: none; /* Prevent interaction with the noodle div */
-    transform: translateX(-500%);
-    z-index: 9999; /* Ensure it appears above other content */
+    animation: noodle-animation 2.5s forwards;
+    z-index: 9999; /* Ensure it appears above other content */;
+    animation-delay: -0s;
 }
