@@ -2,6 +2,12 @@
 
 The World Of Instant Noodles - By Owen Chan
 
+Differences from Planning:
+- Instead of scrolling from left to right in the noodle page, I stuck to only scrolling from up to down.
+
+- I also added headers for the different types of noodles
+
+- I made it so when you clicked onto the different noodles, it leads you to a seperate page with cooking instructions and descriptions.
 ---
 
 ## Works Cited
